@@ -75,10 +75,6 @@ const styles = {
   cardText: {
     fontSize: "1rem",
     color: "#666",
-
-    span{
-      color: "#4CAF50",
-    }
   },
 };
 
