@@ -1,10 +1,11 @@
-//Este componente deberia recibir por props y mostrar en pantalla la informacion
-//que envia el usuario
+import styles from './styles';
 
-function Card() {
+function Card({ nombre, marca }) {
   return (
-    <div>
-      <h2>Esto es un componente</h2>
+    <div style={styles.card}>
+      <h2 style={styles.cardTitle}>Hola {nombre}!</h2>
+      <p style={styles.cardText}>Gracias por contestar nuestro form</p>
+      <p style={styles.cardText}>¡A nosotros también nos gusta mucho <span>{marca}!</span></p>
     </div>
   );
 }
